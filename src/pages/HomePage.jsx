@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import WorkPage from "./WorkPage";
 import Footer from "../layouts/Footer";
 import HeroComponent from "../component/HeroComponent";
+import MainComponent from "../component/MainComponent";
+import ParallaxComponent from "../component/ParallaxComponent";
+
 
 const HomePage = ({ scrollToSection }) => {
   return (
@@ -15,6 +18,8 @@ const HomePage = ({ scrollToSection }) => {
       <div id="about-section">
         <AboutPage />
       </div>
+
+      <ParallaxComponent/>
 
       <div id="contact-section">
         <Footer />

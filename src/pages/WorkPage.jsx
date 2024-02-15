@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import WorkComponent from '../component/WorkComponent';
 
 const WorkPage = () => {
-  return <div></div>;
+  return (
+    <>
+     <WorkComponent/> 
+    </>
+  );
 };
 
 export default WorkPage;

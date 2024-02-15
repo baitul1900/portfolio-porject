@@ -7,6 +7,34 @@ import { Link } from "react-router-dom";
 const HeroComponent = () => {
   const [open, setOpen] = useState(false);
 
+  // all icons links and data here
+  const icons = [
+    {
+      icon: "bi bi-twitter-x",
+      link: "https://metax.io/",
+    },
+    {
+      icon: "bi bi-linkedin",
+      link: "https://www.linkedin.com/in/mshongoti/",
+    },
+    {
+      icon: "bi bi-instagram",
+      link: "https://www.instagram.com/mshongoti/",
+    },
+    {
+      icon: "bi bi-dribbble",
+      link: "https://dribbble.com/mshongoti",
+    },
+    {
+      icon: "bi bi-whatsapp",
+      link: "https://wa.me/918810111111",
+    },
+    {
+      icon: "bi bi-behance",
+      link: "https://www.behance.net/mshongoti",
+    },
+  ];
+
   return (
     <section className="hero-component">
       <div className="container-fluid">
@@ -59,22 +87,48 @@ const HeroComponent = () => {
             <h1 className="design-hero-header">Designer</h1>
 
             <div className="row  header-footer-part">
-              <div className="col-6">
+              <div className="col-4">
                 <img src={onlineGreen} className="img-fluid" alt="image" />
 
-                <span className="ps-2 mt-5">Available for work</span>
+                <span className="ps-2 mt-5 available-work">
+                  Available for work
+                </span>
 
                 <div className="rounded-box-com text-decoration-none">
-                 <Link to={'/*'} >
-                      mishushongoti@ideated_lab.com
-                 </Link>
+                  <Link to={"/*"} className="btn btn-email">
+                    mishushongoti@ideated_lab.com
+                  </Link>
                 </div>
               </div>
-              <div className="col-6"></div>
+              <div className="col-4 align-self-end">
+                <p className="header-footer-paragraph">
+                  I am Mossadiqur, where every pixel narrates a tale, and every
+                  design exemplifies my dedication to creating experiences that
+                  surpass the commonplace.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="col-2"></div>
+          <div className="col-2 text-end">
+            {/* all icons link here */}
+            <ul className="list-unstyled">
+              {icons.map((items, i) => {
+                return (
+                  <li key={i} className="my-4">
+                    <Link
+                      className="text-decoration-none icons-link"
+                      to={items.link}
+                      target="_blank"
+                    >
+                      <i className={`${items.icon}`}></i>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+            {/* all icons link here end */}
+          </div>
         </div>
       </div>
 

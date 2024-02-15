@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-
+// import "bootstrap/dist/css/bootstrap.min.css";
 const AppNavBar = ({ scrollToSection }) => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg ">
+      <div className="container-fluid p-0">
         <Link className="navbar-brand" to={"/"}>
           <h1>M.shongoti</h1>
         </Link>

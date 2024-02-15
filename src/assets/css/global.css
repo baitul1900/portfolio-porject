@@ -14,7 +14,16 @@
   --primaryColor: #000;
   --primaryColorTwo: #bdbdbd;
   --mutedColor: #9e9e9e;
+  --mutedColorThin: #b4b4b4;
+  --mutedColorPera: #757575;
+  --mutedColorSecondary: #424242;
   --purple: #3852b9;
+  --pink: #fb7b7e;
+  --green: #3eb642;
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -32,6 +41,7 @@ body {
   font-size: var(--gradeThree) !important;
   font-family: var(--fontFamily);
   font-weight: 700 !important;
+  padding-left: 28px;
 }
 
 .navbar-item {
@@ -80,10 +90,199 @@ body {
 }
 
 .rounded-box-com {
-  padding-block: 16px;
-  padding-inline: 32px;
-  border-radius: 100px;
-  border: 1px solid #000;
   margin-top: 16px;
 }
+
+.available-work {
+  color: var(--primaryColor);
+  font-size: var(--paragraphFontSize);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-email {
+  padding: 16px 32px !important;
+  border-radius: 100px !important;
+  border: 1px solid #000 !important;
+  color: var(--primaryColor) !important;
+  font-size: var(--paragraphFontSize) !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
+.header-footer-paragraph {
+  color: var(--mutedColorSecondary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+  margin-bottom: 0px !important;
+}
+
+.icons-link {
+  margin-right: 28px;
+  font-size: 20px;
+  color: var(--mutedColor);
+}
+
 /* hero component end */
+
+/* work section */
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+body {
+  overflow-y: visible;
+  position: relative;
+  overflow-x: hidden !important;
+}
+html,
+body {
+  margin: 0;
+}
+
+.new-container {
+  width: 400vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-first-container h2 {
+  margin-top: 89px;
+  padding-left: 28px;
+  color: var(--primaryColor);
+  font-size: var(--titleFontSize);
+  font-weight: 700;
+  line-height: normal;
+  /* margin-bottom: 36px; */
+}
+
+.new-panel {
+  width: 100vw;
+  height: 120px;
+}
+
+.new-description {
+  padding: 43px 44px !important;
+}
+
+.card-one {
+  padding: 43px 44px !important;
+  border: 0px solid !important;
+  background: #f4f7ff !important;
+}
+
+.card-two {
+  padding: 43px 44px !important;
+  border: 0px solid !important;
+  background: #f4f7ff !important;
+}
+
+.card-three {
+  padding: 43px 44px !important;
+  border: 0px solid !important;
+  background: #ffeded !important;
+}
+
+.card-four {
+  padding: 43px 44px !important;
+  border: 0px solid !important;
+  background: #f5fff6 !important;
+}
+
+.card-one .card-text-one {
+  color: var(--purple);
+  font-size: var(--primaryFontSize);
+  font-weight: 700;
+}
+
+.card-one .card-text-two {
+  color: var(--primaryColor);
+  font-size: var(--primaryFontSize);
+  font-weight: 700;
+}
+
+.card-two .card-text-one {
+  color: var(--purple);
+  font-size: var(--primaryFontSize);
+  font-weight: 700;
+}
+
+.card-two .card-text-two {
+  color: var(--primaryColor);
+  font-size: var(--primaryFontSize);
+  font-weight: 700;
+}
+
+.card-three .card-title {
+  color: var(--pink);
+  font-size: var(--primaryFontSize);
+  font-weight: 700;
+  padding-bottom: 15px !important;
+}
+
+.card-four .card-title {
+  color: var(--green);
+  font-size: var(--primaryFontSize);
+  font-weight: 700;
+  padding-bottom: 15px !important;
+}
+
+.card-tag {
+  font-size: var(--paragraphFontSize);
+  color: var(--mutedColorThin);
+  font-weight: 400;
+  /* margin-top: 15px; */
+}
+
+.card-tags span {
+  border: 1px solid var(--mutedColor);
+  margin-inline: 12px;
+  border-radius: 100px;
+  padding: 8px 12px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 612px !important;
+  object-fit: cover;
+  margin-top: 40px;
+}
+/* work section end */
+
+/* about section */
+.about-section {
+  padding-top: 182px;
+  padding-bottom: 92px;
+}
+
+.about-pera-one {
+  color: var(--primaryColor);
+  font-size: var(--subTitleFontSize);
+  font-weight: 700;
+  line-height: 70px; /* 175% */
+}
+
+.about-pera-two,
+.about-pera {
+  color: var(--mutedColorPera);
+  font-size: var(--subTitleFontSize);
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.about-pera {
+  margin-top: 80px;
+}
+/* about section end */
+
+/* scroll card */
+
+/* scroll card end */
