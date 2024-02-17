@@ -16,7 +16,7 @@ const App = () => {
     <BrowserRouter>
       <div>
         <AppNavBar scrollToSection={scrollToSection} />
-        <HomePage/>
+        <HomePage />
       </div>
     </BrowserRouter>
   );

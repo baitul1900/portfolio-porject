@@ -20,6 +20,8 @@
   --purple: #3852b9;
   --pink: #fb7b7e;
   --green: #3eb642;
+  --acordiontitle: #6b6b6b;
+  --cardTitle: #272f43;
 }
 
 html {
@@ -283,6 +285,161 @@ body {
 }
 /* about section end */
 
-/* scroll card */
+/* skill and share */
+.skill-and-share {
+  margin-top: 131px;
+  margin-bottom: 136.2px;
+  padding-inline: 34px;
+}
 
-/* scroll card end */
+.skill-title h1 {
+  color: var(--primaryColor);
+  font-size: var(--titleFontSize);
+  font-weight: 700;
+}
+
+.accordion-item {
+  border-top: 0px solid !important;
+  border-left: 0px solid !important;
+  border-right: 0px solid !important;
+  border-bottom: 1px solid var(--mutedColor) !important;
+  border-radius: 0px !important;
+  margin-bottom: 56px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.item-count {
+  color: var(--acordiontitle) !important;
+  font-size: var(--paragraphFontSize) !important;
+  font-weight: 700 !important;
+  padding-bottom: 24px;
+}
+
+.icon-accordion {
+  font-size: 24px;
+  color: #000;
+}
+.item-name-accordion {
+  color: var(--acordiontitle);
+  font-size: var(--primaryFontSize);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.accordion-body {
+  margin-bottom: 24px;
+}
+
+.accordion-body p {
+  color: var(--acordiontitle);
+  font-size: var(--gradeThree);
+  font-weight: 500;
+}
+
+/* skill and share end */
+
+/* design process  */
+.design-process {
+  padding-inline: 37px;
+  margin-bottom: 130px;
+}
+
+.design-process h1 {
+  color: var(--primaryColor);
+  font-size: var(--titleFontSize);
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+
+.design-process .card {
+  padding-block: 40px;
+  padding-inline: 40px;
+  border: 1px solid #eee !important;
+  background: #fff !important;
+}
+
+.design-process .card .card-image {
+  margin-bottom: 32px;
+}
+
+.design-process .card .card-body h3 {
+  color: var(--cardTitle);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.design-process .card .card-body p {
+  color: var(--acordiontitle);
+  font-size: 12px;
+  font-weight: 700;
+}
+/* design process  end */
+
+/* footer design  */
+footer {
+  background: #000000;
+  padding-top: 84px;
+}
+
+footer h1 {
+  color: #fff;
+  font-size: 128px;
+  font-weight: 700;
+}
+
+.just-say-hello {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 42px;
+}
+
+footer .btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 24px;
+  border-radius: 100px;
+  border: 1px solid #4b4b4b;
+  padding: 16px 32px;
+}
+
+footer .btn:hover {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 24px;
+  border-radius: 100px;
+  border: 1px solid #4b4b4b;
+  padding: 16px 32px;
+}
+
+.second-footer-container {
+  border-top: 2px solid #4e4e4e;
+}
+
+.footer-social-media {
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+.copyright-aleart {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 33px;
+}
+/* footer design  end */

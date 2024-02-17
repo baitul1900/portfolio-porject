@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import WorkPage from "./WorkPage";
 import Footer from "../layouts/Footer";
 import HeroComponent from "../component/HeroComponent";
-import MainComponent from "../component/MainComponent";
-import ParallaxComponent from "../component/ParallaxComponent";
-
+import CardAnimation from "../component/CardAnimation";
+import CardAnimationRtl from "../component/CardAnimationRtl";
+import SkillandShareComponent from "../component/SkillandShareComponent";
+import OurDesignProcess from "../component/OurDesignProcess";
 
 const HomePage = ({ scrollToSection }) => {
   return (
@@ -19,8 +20,10 @@ const HomePage = ({ scrollToSection }) => {
         <AboutPage />
       </div>
 
-      <ParallaxComponent/>
-
+      <CardAnimation />
+      <CardAnimationRtl />
+      <SkillandShareComponent />
+      <OurDesignProcess />
       <div id="contact-section">
         <Footer />
       </div>
