@@ -227,14 +227,12 @@ body {
   color: var(--pink);
   font-size: var(--primaryFontSize);
   font-weight: 700;
-  padding-bottom: 15px !important;
 }
 
 .card-four .card-title {
   color: var(--green);
   font-size: var(--primaryFontSize);
   font-weight: 700;
-  padding-bottom: 15px !important;
 }
 
 .card-tag {

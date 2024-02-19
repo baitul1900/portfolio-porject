@@ -1,0 +1,78 @@
+@media (max-width: 938px) {
+  .product-hero-header {
+    padding-left: 28px;
+    font-size: 46px;
+  }
+
+  .hero-component {
+    margin-top: 40px;
+  }
+
+  .design-hero-header {
+    padding-left: 28px;
+    font-size: 46px;
+  }
+
+  .header-footer-part {
+    padding-left: 28px;
+  }
+
+  .skill-title h1 {
+    margin-bottom: 64px;
+  }
+
+  .svg-play-button {
+    height: 42px !important;
+    width: 42px !important;
+    margin-left: 16px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 142px !important;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  .about-section  {
+    padding-top: 0px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .card-tags span {
+    margin-inline: 4px;
+    font-size: 8px;
+    padding: 8px 6px;
+  }
+
+  .icons-link {
+    font-size: 12px;
+  }
+
+  .available-work {
+    font-size: 12px;
+  }
+
+  .btn-email {
+    font-size: 12px !important;
+    padding: 10px 10px !important;
+  }
+
+  .header-footer-paragraph {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  footer h1 {
+    color: #fff;
+    font-size: 60px !important;
+    font-weight: 700;
+  }
+
+  .navbar-item {
+    margin: 0px;
+    padding-left: 16px;
+  }
+}

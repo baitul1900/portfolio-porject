@@ -1,11 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Modal } from "antd";
 import vidSrc from "../assets/videos/video.mp4";
 import onlineGreen from "../assets/images/svg/online-green.svg";
 import { Link } from "react-router-dom";
+import Typed from "typed.js";
+
 
 const HeroComponent = () => {
   const [open, setOpen] = useState(false);
+
+  const el = useRef(null);
+
+
+  useEffect(()=> {
+    const typed = new Typed(el.current, {
+      strings: ["I am Mossadiqur", "where every pixel narrates a tale", "and everydesign exemplifies my dedication to creating experiences that surpass the commonplace"],
+      // speed and settings here
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+      cursorChar: "...",
+      smartBackspace: true,
+    });
+     return ()=> {
+      typed.destroy();
+     };
+  }, [])
 
   // all icons links and data here
   const icons = [
@@ -86,8 +106,8 @@ const HeroComponent = () => {
 
             <h1 className="design-hero-header">Designer</h1>
 
-            <div className="row  header-footer-part">
-              <div className="col-4">
+            <div className="row gy-4 header-footer-part">
+              <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                 <img src={onlineGreen} className="img-fluid" alt="image" />
 
                 <span className="ps-2 mt-5 available-work">
@@ -100,12 +120,9 @@ const HeroComponent = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-4 align-self-end">
-                <p className="header-footer-paragraph">
-                  I am Mossadiqur, where every pixel narrates a tale, and every
-                  design exemplifies my dedication to creating experiences that
-                  surpass the commonplace.
-                </p>
+              <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 align-self-end">
+                <span className="header-footer-paragraph" ref={el}>
+                </span>
               </div>
             </div>
           </div>

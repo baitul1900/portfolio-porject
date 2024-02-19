@@ -10,7 +10,7 @@ const AppNavBar = ({ scrollToSection }) => {
           <h1>M.shongoti</h1>
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler me-4"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"

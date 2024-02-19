@@ -40,7 +40,7 @@ const OurDesignProcess = () => {
       </h1>
 
       {/* card section goes here */}
-      <div className="row d-flex">
+      <div className="row d-flex gy-2">
         {cardData.map((item) => {
           return (
             <div className="col-sm-12 col-lg-3" key={item["id"]}>
