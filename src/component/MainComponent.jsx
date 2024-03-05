@@ -1,4 +1,3 @@
-import React from "react";
 import ParallaxComponent from "./ParallaxComponent";
 
 const MainComponent = () => {

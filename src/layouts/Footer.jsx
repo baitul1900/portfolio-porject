@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  // Social media icons and their respective links
   const icons = [
     {
       icon: "bi bi-twitter-x",
@@ -32,10 +32,13 @@ const Footer = () => {
   return (
     <footer>
       <div className="container text-center pb-5">
+        {/* Main footer heading */}
         <h1 className="mb-0 text-center">Let’s work together</h1>
 
+        {/* Subtitle */}
         <p className="just-say-hello mb-0 text-center">Just Say Hello,</p>
 
+        {/* Email contact link */}
         <Link className="btn">
           <i className="bi bi-envelope pe-2"></i>
           <span>mishushongoti@ideated_lab.com</span>
@@ -43,6 +46,7 @@ const Footer = () => {
 
         <br />
 
+        {/* Phone contact link */}
         <Link className="btn mb-5">
           <i className="bi bi-whatsapp pe-2"></i>
           <span>+88 017 000 00000</span>
@@ -50,18 +54,20 @@ const Footer = () => {
       </div>
 
       <div className="container-fluid text-center second-footer-container pt-3 pb-5">
-        {icons.map((items, i) => {
+        {/* Rendering social media icons */}
+        {icons.map((item, i) => {
           return (
             <Link
               key={i}
-              to={`${items["link"]}`}
+              to={`${item["link"]}`}
               className="footer-social-media text-decoration-none mx-3"
             >
-              <i className={`${items["icon"]}`}></i>
+              <i className={`${item["icon"]}`}></i>
             </Link>
           );
         })}
 
+        {/* Copyright notice */}
         <p className="mb-0 copyright-aleart">All rights reserved. © Copyright 2024</p>
       </div>
     </footer>

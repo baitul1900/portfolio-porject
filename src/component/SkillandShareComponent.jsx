@@ -1,4 +1,3 @@
-import React from "react";
 import AccordionComponent from "./AccordionComponent";
 
 const SkillandShareComponent = () => {

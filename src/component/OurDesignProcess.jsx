@@ -1,4 +1,3 @@
-import React from "react";
 import light from "../assets/images/svg/lights.svg";
 import pen from "../assets/images/svg/pen.svg";
 import design from "../assets/images/svg/design.svg";

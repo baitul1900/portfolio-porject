@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import { Modal } from "antd";
 import vidSrc from "../assets/videos/video.mp4";
 import onlineGreen from "../assets/images/svg/online-green.svg";
